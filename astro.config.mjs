@@ -5,9 +5,7 @@ import netlify from '@astrojs/netlify';
 
 export default defineConfig({
     output: 'server',
-    adapter: netlify({
-      edgeMiddleware: true
-    }),
+    adapter: netlify(),
     integrations: [
       starlight({
         title: 'My delightful docs site',
